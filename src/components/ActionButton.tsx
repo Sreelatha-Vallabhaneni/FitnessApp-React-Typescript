@@ -12,7 +12,7 @@ const ActionButton = ({ children, setSelectedPage }: Props) => {
     const isMobile = useMediaQuery("(max-width: 639px)")
   return (
     <AnchorLink
-      className={`rounded-md bg-secondary-500 ${!isMobile && 'px-10'} text-sm text-center lg:text-base py-2 hover:bg-primary-500 hover:text-white`}
+      className={`rounded-md bg-secondary-500 ${!isMobile ? 'px-10' : 'px-4'} text-sm text-center lg:text-base py-2 hover:bg-primary-500 hover:text-white`}
       onClick={() => setSelectedPage(SelectedPage.ContactUs)}
       href={`#${SelectedPage.ContactUs}`}
     >
