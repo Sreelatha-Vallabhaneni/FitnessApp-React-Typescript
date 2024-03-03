@@ -3,6 +3,7 @@ import Navbar from "./components/navbar"
 import Home from "./components/home"
 import Benefits from "./components/benefits"
 import { SelectedPage } from "@/utils/types"
+import OurClasses from "./components/ourClasses"
 
 
 
@@ -32,6 +33,7 @@ function App() {
       />
       <Home setSelectedPage={setSelectedPage} />
       <Benefits setSelectedPage={setSelectedPage} />
+      <OurClasses setSelectedPage={setSelectedPage} />
     </div>
   )
 }
