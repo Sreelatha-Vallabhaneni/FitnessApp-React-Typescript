@@ -5,6 +5,7 @@ import Benefits from "./components/benefits"
 import { SelectedPage } from "@/utils/types"
 import OurClasses from "./components/ourClasses"
 import ContactUs from "./components/contactUs"
+import Footer from "./components/footer"
 
 
 
@@ -36,6 +37,7 @@ function App() {
       <Benefits setSelectedPage={setSelectedPage} />
       <OurClasses setSelectedPage={setSelectedPage} />
       <ContactUs setSelectedPage={setSelectedPage} />
+      <Footer />
     </div>
   )
 }
